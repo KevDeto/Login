@@ -1,6 +1,5 @@
 package login.service;
 
-import org.springframework.boot.autoconfigure.info.ProjectInfoProperties.Build;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -52,5 +51,4 @@ public class AuthService {
 				.token(jwtService.getToken(user))
 				.build();
 	}
-
 }
